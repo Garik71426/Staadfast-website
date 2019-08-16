@@ -1,0 +1,164 @@
+#sf-main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 416px;
+}
+.scroll-top {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    bottom: 0;
+    right: 0;
+    z-index: 100000;
+    margin: 15px;
+    color: white;
+    background-color: rgba(31, 31, 31, 0.5);
+    padding: 6px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#sf-main .main-bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../../img/mainbg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sf-main .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#sf-main .main-content h1 {
+    margin: 36px auto;
+    text-align: center;
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    letter-spacing: -3px;
+    visibility: inherit;
+    transition: none;
+    border-width: 0;
+    padding: 0;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0;
+}
+#sf-main .main-content h4 {
+    white-space: normal;
+    font-size: 36px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    visibility: inherit;
+    transition: none;
+    text-align: center;
+    border-width: 0;
+    margin: 36px auto;
+    padding: 0;
+    letter-spacing: 0;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0;
+}
+#sf-main .check-portfolio {
+    text-align: center;
+    margin: 20px 0;
+}
+#sf-main .check-portfolio > a {
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-align: center;
+    border-radius: 999px;
+    width: 200px;
+    font-size: 12px;
+    font-weight: 900;
+    color: #1f1f1f;
+    padding: 0 25px;
+    margin: auto;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #fff;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+#sf-main .check-portfolio > a:hover {
+    background: transparent;
+    color: #fff;
+}
+@media (max-width: 1200px) and (min-width: 1024px) {
+    #sf-main .main-content h1 {
+        font-size: 80px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+    #sf-main .main-content h1 {
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: 0;
+        margin: 30px auto;
+        width: 736px;
+    }
+    #sf-main .main-content h4 {
+        font-size: 24px;
+        margin: 30px auto;
+    }
+    #sf-main .check-portfolio > a{
+        height: 44px;
+        line-height: 44px;
+        width: 160px;
+    }
+}
+@media (max-width: 767px) {
+    #sf-main .main-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0;
+        margin: 15px auto;
+        max-width: 600px;
+    }
+    #sf-main .main-content h4 {
+        font-size: 24px;
+        margin: 15px auto;
+    }
+    #sf-main .check-portfolio > a{
+        height: 44px;
+        line-height: 44px;
+        width: 160px;
+    }
+}
+@media (max-width: 480px) {
+    #sf-main .main-content h1 {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0;
+        margin: 15px auto;
+        max-width: 342px;
+    }
+    #sf-main .main-content h4 {
+        font-size: 16px;
+        margin: 15px auto;
+    }
+    #sf-main .check-portfolio > a{
+        height: 40px;
+        line-height: 40px;
+        width: 160px;
+    }
+}

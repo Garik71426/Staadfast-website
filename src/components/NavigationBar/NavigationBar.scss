@@ -1,0 +1,95 @@
+.sf-navbar{
+    position: fixed!important;
+    background-color: transparent;
+    border-color: transparent;
+    transition: all .25s ease-in-out;
+    width: 100%;
+    z-index: 10000000;
+    padding: 0!important;
+
+    .container{
+        width: 95%;
+    }
+
+    &--logo{
+        float: left;
+
+        a{
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 99px;
+            margin: 0;
+            display: block;
+            float: left;
+            letter-spacing: -.7px;
+            transition: all .25s ease-in-out;
+            color: #ffffff!important;
+        }
+    }
+    
+    &--menu-item{
+        color: #ffffff!important;
+        font-size: 14px;
+        opacity: 1;
+        padding: 43px 15px!important;
+        margin: 0;
+        line-height: 1;
+        transition: .25s;
+        letter-spacing: -.1px;
+        font-weight: 700;
+        font-style: normal;
+
+        &:hover{
+            color: #31d093!important;
+        }
+    }
+    
+    &--toogler{
+        border: 0!important;
+        margin-right: -10px;
+        
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.sticky{
+    background-color: #ffffff;
+
+    a{
+        color: #1f1f1f!important;
+    }
+}
+
+@media (max-width: 767px) {
+    .sf-navbar {
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 0 rgba(0,0,0,.08);
+        padding: 8px 0;
+        min-height: 65px;
+        margin: 0;
+    }
+
+    .sf-navbar .container{
+        max-width: none;
+    }
+
+    .sf-navbar--toogler {
+        overflow-y: auto;
+        max-height: calc(100vh - 65px);
+    }
+    .sf-navbar--menu-item{
+        color: #1f1f1f!important;
+        padding: 5px 0!important;
+        margin: 15px 0 0;
+        text-align: left;
+        max-height: inherit;
+    }
+    .sf-navbar--logo a{
+        margin-left: 0;
+        line-height: 47px;
+        font-size: 22px;
+        color: #1f1f1f!important;
+    }
+}

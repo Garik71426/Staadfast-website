@@ -1,0 +1,92 @@
+#sf-opensources {
+    .content-box {
+        text-align: center;
+        max-width: 768px;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .circular-button {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #31d093;
+        border-radius: 50%;
+        background-image: url('../../img/zeronode.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.modal-dialog {
+    max-width: 100%!important;
+    margin-top: 140px!important;
+    margin-bottom: 0!important;
+}
+
+.modal-content {
+    background-image: url('../../img/modalbg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .close {
+        color: #FFFFFF;
+    }
+}
+
+.modal-image {
+    text-align: center;
+}
+
+.modal-icon {
+    display: grid;
+    text-align: -webkit-center;        
+    margin-bottom: 4em;
+
+    h3 {
+        margin-top: .85em;
+    }
+}
+
+.modal-dialog .link-items {
+    text-align: center;
+}
+
+.modal-dialog ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.modal-dialog ul li {
+    display: inline-block;
+}
+.modal-dialog ul li a {
+    margin: 0 5px;
+    border: 1px solid #e8e8e8;
+    color: #e8e8e8;
+    padding: 8px 12px;
+    display: block;
+}
+.modal-dialog a:hover {
+    transition: .25s;
+    opacity: .5;
+}
+.modal-dialog i.fa {
+    color: #e8e8e8;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .modal-dialog {
+        margin-top: 70px!important;
+    }
+}
