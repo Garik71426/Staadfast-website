@@ -1,3 +1,3 @@
 # website
 Steadfast website  steadfast.tech (with react)
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Garik71426/Staadfast-website/tree/master/screenshots)
